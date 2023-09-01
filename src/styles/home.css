@@ -1,0 +1,46 @@
+.home-div { 
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.bg-image{
+    z-index: -1;
+    width: 99.9%;
+    height: 100vh;
+}
+
+.inner-home-div{
+    position: absolute;
+    z-index: 4;
+    width: 30%;
+    margin: 10%;
+    text-align: center;
+    align-self: center;
+    color: aliceblue;
+} 
+
+.newAdditon-btn{
+    padding: 10px;
+    font-size: 15px;
+    background-image: linear-gradient(
+    rgba(4, 38, 66, 0.979), 
+    rgba(6, 60, 104, 0.719));
+    border: none;
+    color: bisque;
+}
+
+.newAdditon-btn:hover{
+    background-image: linear-gradient(
+    rgba(5, 45, 78, 0.719),
+    rgba(3, 28, 48, 0.979), 
+    );
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .newAdditon-btn{
+        font-size: 10px;
+    }
+}
+

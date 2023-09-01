@@ -1,0 +1,111 @@
+.nav-main{
+    background-image: linear-gradient(
+    rgba(4, 38, 66, 0.979), 
+    rgba(6, 60, 104, 0.719));
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width: 99.9%;
+    position: fixed;
+    padding: 5px;
+    height: 10vh;
+    z-index: 9999;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.486);
+}
+
+.nav-main > img{
+    width: 10%;
+}
+
+
+
+.profile-main{
+    justify-content: space-evenly;
+    width: 8%; 
+    padding: 5px;  
+}
+
+.profile-main > .icon:hover{
+    cursor: pointer;
+    color: bisque;
+}
+
+.menu-main{
+    justify-content: space-around;
+    width: 70%;
+    font-size: 14px;
+    border-right: 1px solid white;
+    padding: 8px 0px;
+}
+.menu-main li{
+    list-style-type: none;
+    text-transform: uppercase;  
+}
+
+.menu-main li:hover{
+    color:bisque;
+    text-decoration:underline bisque;
+    /* border-bottom: 2px solid blue; */
+    cursor: pointer;
+}
+
+.menu-main li:active{
+    color:bisque;
+    text-decoration:underline bisque;
+}
+.menu-line-div{
+    display: flex;
+    flex-direction: column;
+    z-index: 9999999;
+    margin-top: 16%;
+}
+.menu-line-div {
+    width: 20px;
+    display: none;
+    padding: 0px 5px;
+    
+}
+.menu-list{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .menu-main{
+        display: none;
+    }
+
+    .menu-line-div {   
+        display: block;   
+        width: 10px;     
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu-main{
+        display: none;
+    }
+    .menu-line-div {   
+        display: block;    
+        width: 15px;    
+    }
+}
+@media screen and (max-width: 900px) {
+    .menu-main{
+       display: none;
+    }
+    .menu-line-div {   
+        display: block;        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu-main{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-main{
+        font-size: 14px;
+    }
+}
